@@ -1,11 +1,14 @@
-package com.gu.wiki;
+package com.gu.wiki.config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.core.env.Environment;
 
+@ComponentScan("com.gu")
+// 扫描多个包 @ComponentScan({"com.gu", "com.test"})
 @SpringBootApplication
 public class WikiApplication {
 
